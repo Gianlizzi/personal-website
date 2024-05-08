@@ -1,5 +1,4 @@
 #foto_cv {
-    display: block;
     margin: 0px auto;
     width: 25%;
   }
@@ -16,7 +15,7 @@ header{
 }
 
 hr{
-    margin: 0px;
+    margin: 1px;
     border: 1px solid coral;
 }
 
