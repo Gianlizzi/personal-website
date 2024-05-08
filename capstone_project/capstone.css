@@ -1,0 +1,32 @@
+#foto_cv {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+  }
+  
+#nome{
+    text-align: center;
+    color: #FBF6F1;
+}
+
+header{
+    background-color: #074173;
+}
+
+main{
+    padding: 8px;
+    background-color: #FBF6F1;
+}
+
+footer{
+    background-color: #FBF6F1;
+}
+
+.orizzontale{
+    border: 1px solid coral;
+}
+
+.titoli{
+    color: #074173;
+}
