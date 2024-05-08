@@ -10,13 +10,15 @@
 }
 
 header{
-    margin: 10px;
+    width: 80%;
+    margin: 10px auto;
     background-color: #074173;
 }
 
 main{
-    margin: 10px;
-    padding: 8px;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
     background-color: #FBF6F1;
 }
 
