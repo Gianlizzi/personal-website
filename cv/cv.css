@@ -15,6 +15,11 @@ header{
     background-color: #074173;
 }
 
+hr{
+    margin: 0px;
+    border: 1px solid coral;
+}
+
 main{
     width: 80%;
     margin: 10px auto;
@@ -24,10 +29,6 @@ main{
 
 footer{
     background-color: #FBF6F1;
-}
-
-.orizzontale{
-    border: 1px solid coral;
 }
 
 .titoli{
