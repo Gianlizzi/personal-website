@@ -1,7 +1,6 @@
 #foto_cv {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0px auto;
     width: 25%;
   }
   
