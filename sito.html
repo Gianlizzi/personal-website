@@ -14,10 +14,9 @@
 <header>
     <h1>Il mio sito web personale</h1>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact</a>
+        <a href="sito.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
     </nav>
 </header>
 
@@ -31,47 +30,49 @@
     </section>
 
     <section id="about">
-    <h2>About me</h2>
-    <p>
-        Dopo aver ottenuto il diploma presso il Liceo Classico Statale Giuseppe Parini,
-        mi sono iscritto al corso di studi di Ingegneria Biomedica del Politecnico
-        di Milano. Dopo il conseguimento della Laurea Triennale, ho proseguito gli
-        studi nello stesso ambito specializzandomi in Cellule, Tessuti e
-        Biotecnologie. Nel mese di aprile del 2024 ho completato il ciclo di studi
-        laureandomi con valutazione di 104/110. Nel frattempo, mi sono dedicato allo
-        sport, così come faccio fin da quando ero piccolo. Sono ormai 15 anni che ho
-        abbandonato il nuoto per dedicarmi al calcio, militando sempre nella stessa
-        società sportiva e ottenendo traguardi dei quali sono orgoglioso, come il
-        raggiungimento nella stagione sportiva 2021/2022 della categoria Eccellenza.
-    </p>
-    <br>
-    <h3>Curriculum Vitae</h3>
-    <p>
-        Ecco il mio
-        <a href="cv/cv.html">CV</a>,
-        per avere una panoramica più approfondita delle mie competenze.
-        Alla sezione "Portfolio" puoi dare un'occhiata ai progetti principali
-        che hanno caratterizzato la mia carriera accademica.
-    </p>
+        <h2>About me</h2>
+
+        <div class="about education">
+            <img src="laurea.jpg" class="foto">
+            <p class="caption">
+                Dopo aver ottenuto il diploma presso il Liceo Classico Statale Giuseppe Parini, mi sono iscritto al corso di studi di Ingegneria Biomedica del Politecnico di Milano. Dopo il conseguimento della Laurea Triennale, ho proseguito gli studi nello stesso ambito specializzandomi in Cellule, Tessuti e Biotecnologie. Nel mese di aprile del 2024 ho completato il ciclo di studi laureandomi con valutazione di 104/110.
+            </p>
+        </div>
+
+        <br>
+        <div class="about sport">
+            <img src="virtus_logo.png" class="virtus-logo">
+            <p class="virtus-descrizione">
+                Nel frattempo, mi sono dedicato allo sport, così come faccio fin da quando ero piccolo. Sono ormai 15 anni che ho abbandonato il nuoto per dedicarmi al calcio, militando sempre nella stessa società sportiva e ottenendo traguardi dei quali sono orgoglioso, come il raggiungimento nella stagione sportiva 2021/2022 del campionato di Eccellenza (Lombardia, Girone A).
+            </p>            
+        </div>
+
+        <br>
+        <h3>Curriculum Vitae</h3>
+        <p>
+            Ecco il mio
+            <a href="cv/cv.html">CV</a>,
+            per avere una panoramica più approfondita delle mie competenze.
+            Alla sezione "<a href="#portfolio">Portfolio</a>" puoi dare un'occhiata ai progetti principali
+            che hanno caratterizzato la mia carriera accademica.
+        </p>
     </section>
 
     <section id="portfolio">
-    <h2>Portfolio</h2>
-    <ul>
-        <li>Tesi di Laurea Magistrale - Prediction of extrauterine growth restriction in preterm infants to optimise neonatal nutrition: a convolutional neural network approach.</li>
-        <li>Capstone project - Smart Infusion System.</li>
-        <li>Tesi di Laurea Triennale - Caratterizzazione di gomme siliconiche per la realizzazione di modelli vascolari elastomerici.</li>
-    </ul>
-    </section>
-
-    <section id="contact">
-    <h2>Contact me</h2>
-    <p>[Scrivi qui le tue informazioni di contatto, come email, telefono e social media.]</p>
+        <h2>Portfolio</h2>
+        <ul>
+            <li>Tesi di Laurea Magistrale - Prediction of extrauterine growth restriction in preterm infants to optimise neonatal nutrition: a convolutional neural network approach.</li>
+            <li>Capstone project - Smart Infusion System.</li>
+            <li>Tesi di Laurea Triennale - Caratterizzazione di gomme siliconiche per la realizzazione di modelli vascolari elastomerici.</li>
+        </ul>
     </section>
 </main>
 
 <footer>
-    <p>Copyright &copy; 2024 Gianluca Alberizzi</p>
+    <h2>Contact me</h2>
+    <p>[Scrivi qui le tue informazioni di contatto, come email, telefono e social media.]</p>
+    <br>
+    <div>Copyright &copy; 2024 Gianluca Alberizzi</div>
 </footer>
 
 </body>
