@@ -1,32 +1,30 @@
 #foto_cv {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 25%;
   }
   
 #nome{
+    text-align: center;
     color: #FBF6F1;
 }
 
 header{
-    width: 80%;
-    margin: 10px auto;
     background-color: #074173;
-    text-align: center;
-}
-
-hr{
-    margin: 1px;
-    border: 1px solid coral;
 }
 
 main{
-    width: 80%;
-    margin: 10px auto;
-    padding: 10px;
+    padding: 8px;
     background-color: #FBF6F1;
 }
 
 footer{
     background-color: #FBF6F1;
+}
+
+.orizzontale{
+    border: 1px solid coral;
 }
 
 .titoli{
