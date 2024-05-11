@@ -1,18 +1,8 @@
-/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  
-/*
-body {
-    font-family: sans-serif;
-    font-size: 16px;
-    color: #333;
-    line-height: 1.5;
-}
-*/
 
 .ubuntu-regular {
     font-family: "Ubuntu", Arial;
@@ -22,12 +12,16 @@ body {
 
 body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 80%;
+    margin: 10px auto;
+    background-image: url(polimi.jpg);
+    background-size: cover;
 }
 
 header{
     text-align: center;
     color: white;
-    background-color: #BC0000;
+    background-color: rgba(255, 0, 0, 0.8);
     border: 2px solid black;
     padding: 10px 20px;
 }
@@ -39,24 +33,28 @@ header h1 {
   
 header nav {
     float: right;
+    font-size: 20px;
 }
 
 header nav a {
+    padding: 3px;
+    border-radius: 5px;
     margin-right: 10px;
     text-decoration: none;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 1);
     color: black;
     border: 1px solid black;
 }
   
 header nav a:hover {
-    color: #ddd;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 main {
     padding: 20px;
     border: 1px solid black;
-    background-color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 25px;
 }
   
 section {
@@ -75,9 +73,44 @@ section h2 {
 #home p {
     margin-bottom: 20px;
 }
-  
-#about {
-    /* Aggiungi i tuoi stili per la sezione about */
+
+.about{
+    clear: both;
+    content: '';
+    display: table;
+    margin-bottom: 20px;
+}
+
+.foto{
+    border-radius: 10px;
+}
+
+.education{
+    height: 500px;
+}
+
+.education > *{
+    float: left;
+    margin: 0px 20px 0px 0px;
+    height: 500px;
+}
+
+.caption{
+    width: 30%;
+}
+
+.sport{
+    height: 200px;
+}
+
+.sport > *{
+    float: right;
+    margin: 0px 10px;
+    height: 200px;
+}
+
+.virtus-descrizione{
+    width: 70%;
 }
   
 #portfolio ul {
@@ -89,10 +122,13 @@ section h2 {
 }
 
 footer{
-    background-color: #001CBC;
+    background-color: rgba(0, 0, 255, 0.8);
     color: white;
     padding: 10px 20px;
     border: 2px solid black; 
     text-align: center;
 }
-  
+
+footer > div{
+    font-size: 12px;
+}
