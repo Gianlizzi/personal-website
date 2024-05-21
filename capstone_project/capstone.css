@@ -247,3 +247,12 @@ span{
     height: 160px;
     font-size: 18px;
 }
+
+footer{
+    margin-right: 55px;
+    text-align: right;
+}
+
+footer > img{
+    height: 100px;
+}
