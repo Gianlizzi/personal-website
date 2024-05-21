@@ -2,40 +2,161 @@
 
 <html>
 
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <title>Curriculum Vitae</title>
-    </head>
+<head>
+    <link rel="stylesheet" href="capstone.css">
+    <title>Capstone Project</title>
+</head>
 
-    <body>
+<body>
+    <header>
+        <div>
+            <img src="logo-polimi.png" class="intestazione">
+            <img src="logo-kalpa.png" class="intestazione">
+            <img src="logo-capstone.png" class="intestazione">
+        </div>
+    </header>
 
-        <header>
-            <img id="foto_cv" src="foto_cv.jpeg">
-            <h1 id="nome">Gianluca Alberizzi</h1>
-            <hr class="orizzontale">
-        </header>
-        
-        <main>
-            <h3 class="titoli">Education</h3>
-            <h4>Laurea Magistrale in Ingegneria Biomedica - Cellule, tessuti e biotecnologie</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, voluptatem provident. Alias obcaecati maxime ratione qui incidunt facere mollitia architecto doloremque, sint laudantium sit quas atque tempore recusandae quasi corrupti?</p>
-            <h4>Laurea Triennale in Ingegneria Biomedica</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, voluptatem provident. Alias obcaecati maxime ratione qui incidunt facere mollitia architecto doloremque, sint laudantium sit quas atque tempore recusandae quasi corrupti?</p>
-            <h4>Diploma Liceo Classico</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, voluptatem provident. Alias obcaecati maxime ratione qui incidunt facere mollitia architecto doloremque, sint laudantium sit quas atque tempore recusandae quasi corrupti?</p>
-    
-            <h3 class="titoli">Experience</h3>
-            <h4>Peer to peer tutoring</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, voluptatem provident. Alias obcaecati maxime ratione qui incidunt facere mollitia architecto doloremque, sint laudantium sit quas atque tempore recusandae quasi corrupti?</p>
-    
-            <h3 class="titoli">Interests</h3>
-            <h4>Coding</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, voluptatem provident. Alias obcaecati maxime ratione qui incidunt facere mollitia architecto doloremque, sint laudantium sit quas atque tempore recusandae quasi corrupti?</p>
-        </main>
-        
-        <hr class="orizzontale">
-        <footer>More is yet to come! &#x1F51C </footer>
-    
-    </body>
+    <main>
+        <section class="title">
+            <h1>Smart Infusion System</h1>
+            <div>Gianluca Alberizzi, Anna Benaglia, Federica Ciceri Negri, Christian Dieni, Giorgia Ladislao</div>
+        </section>
+
+        <section class="corpo">
+            <div class="first row">
+                <div class="sec one">
+                    <div class="sec-title">Background</div>
+                    <div class="sec-text">
+                        Infusion therapy is one of the most widely used techniques in hospitals and clinics, and nevertheless some problems are still apparent.
+                        <br> <br>
+                        The medical issue concerns the <span>air intake</span> into the tube below the drip chamber; in this case all the set is usually <span>thrown away</span>. This is a <span>huge economic issue</span> especially for the most expensive drugs.
+                        <br> <br>
+                        In order to <span>avoid drugs handling</span> and to <span>save time</span> for the operators, we developed with Kalpa a &quot;Smart Infusion System&quot;.
+                    </div>
+                </div>
+                <div class="sec two">
+                    <div class="sec-title">Aim</div>
+                    <div class="sec-text">
+                        Creating a <span>wireless remote communication system</span> to collect data from sensors and send information to the cloud.
+                        <br> <br>
+                        <img src="obiettivi.png" id="obiettivi">
+                    </div>
+                </div>
+                <div class="sec three">
+                    <div class="sec-title">Materials and Methods</div>
+                    <div class="sec-text">
+                        <div id="text-m-m">
+                            &bull; <span>SolidWorks</span> for CAD design
+                            <br>
+                            &bull; 3D printing material: <span>PLA</span>
+                            <br> <br> <br> <br>
+                            &bull; Arduino IDE for firmware <br> &ThickSpace; development
+                            <br> <br> <br> <br> <br>
+                            &bull; Grafana for graphical <br> &ThickSpace; visualization of the <br> &ThickSpace; acquired data                            
+                        </div>
+                        <img src="M_M.png" id="img-m-m">
+                    </div>
+                </div>
+            </div>
+            <div class=" second row">
+                <div class="sec four">
+                    <div class="sec-title">Device</div>
+                    <div class="sec-text">
+                        <div id="device-text">
+                            <span class="punti">Hardware</span>
+                            <ul>
+                                <li><span>Load cell</span>: to collect data about
+                                    <br>
+                                    weight change during time of the infusion bag
+                                </li>
+                                <br>
+                                <li>
+                                    <span>Capacitive mono-level sensor</span>: can detect
+                                    <br>
+                                    the level of the liquid in the drip chamber
+                                </li>
+                                <br>
+                                <li>
+                                    <span>Led and buzzer</span>: to alert the operators and
+                                    <br>
+                                    avoid the entry of air in the tube
+                                </li>
+                                <br>
+                                <li>
+                                    <span>ESP32</span>: a cost-effective board that connects
+                                    <br>
+                                    all the hardware components, with integrated
+                                    <br>
+                                    Wi-Fi connection
+                                </li>
+                            </ul>
+                            <br>
+                            <span class="punti">Software</span>
+                            <ul>
+                                <li><span>Grafana</span></li>
+                            </ul>
+                            <br>
+                            <div>Different panels for every infusion system:</div>
+                            <div class="schemino">
+                                <div>Weight trend</div>
+                                <div>Alarms list</div>
+                                <div>Weight %</div>
+                                <div>Flow rate</div>
+                            </div>
+                        </div>
+                        <img src="device.png" id="device-img">
+                    </div>
+                </div>
+                <div class="sec five">
+                    <div class="sec-title">Target Market</div>
+                    <div class="sec-text" id="target-market-text">
+                        <div id="titolo-target">Hospitals and clinics</div>
+                        <br>
+                        <div class="target">
+                            <div class="target-title one">TAM</div>
+                            <div class="target-caption">
+                                <div class="sigla">Total addressable market</div>
+                                <div class="spiegazione">Whoever uses infusion bags</div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="target">
+                            <div class="target-title two">SAM</div>
+                            <div class="target-caption">
+                                <div class="sigla">Serviceable addressable market</div>
+                                <div class="spiegazione">Whoever wants to apply smart technology to infusion bags</div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="target">
+                            <div class="target-title three">SOM</div>
+                            <div class="target-caption">
+                                <div class="sigla">Serviceable obtainable market</div>
+                                <div class="spiegazione">Hospitals and clinics willing to apply smart technology to infusion bags</div>
+                            </div>
+                        </div>
+                        <img src="target.png" id="target-img">
+                    </div>
+                </div>
+                <div class="sec six">
+                    <div class="sec-title">Future developments</div>
+                    <div class="sec-text">
+                        <ul>
+                            <li>PCB realization</li>
+                            <br>
+                            <li>Combined use with mechanical lock</li>
+                            <br>
+                            <li>Battery-powered device</li>
+                            <br>
+                            <li>Link monitoring data to patient's medical record</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+</body>
 
 </html>
