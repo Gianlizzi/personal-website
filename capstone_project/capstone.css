@@ -1,32 +1,240 @@
-#foto_cv {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-  }
-  
-#nome{
-    text-align: center;
-    color: #FBF6F1;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
-    background-color: #074173;
+    margin: 50px 0px;
 }
 
-main{
-    padding: 8px;
-    background-color: #FBF6F1;
+header > div{
+    width: 80vw;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px 0px;
+    text-align: center;
 }
 
-footer{
-    background-color: #FBF6F1;
+.intestazione{
+    height: 100px;
+    margin: 0px 10px;
 }
 
-.orizzontale{
-    border: 1px solid coral;
+.title{
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-.titoli{
-    color: #074173;
+.title > h1{
+    font-size: 74px;
+    margin-bottom: 10px;
+    background: -webkit-linear-gradient(right, #EB1C74 30%, #3A0593 50%, #6ED7C6 65%);
+    background: linear-gradient(to right, #EB1C74 30%, #3A0593 50%, #6ED7C6 65%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    color: #EB1C74;
+}
+
+.title > div{
+    font-size: 20px;
+}
+
+.corpo{
+    margin: 30px;
+}
+
+.row{
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.row > .sec{
+    float: left;
+    margin: 0px 10px;
+}
+
+.sec > *{
+    width: 30vw;
+    margin: 5px 0px;
+}
+
+.sec-title{
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    padding-left: 20px;
+    color: #ffffff;
+    background-color: #EB1C74;
+}
+
+.sec-text{
+    font-size: 20px;
+    height: 350px;
+    padding: 5px;
+}
+
+ul{
+    margin-left: 16px;
+}
+
+span{
+    font-weight: bold;
+}
+
+.one > .sec-title, .four > .sec-title{
+    background-color: #EB1C74;
+}
+
+.two > .sec-title, .five > .sec-title{
+    background-color: #3A0593;
+}
+
+.three > .sec-title, .six > .sec-title{
+    background-color: #6ED7C6;
+}
+
+.one > .sec-text, .four > .sec-text{
+    border: 1px solid #EB1C74;
+}
+
+.two > .sec-text, .five > .sec-text{
+    border: 1px solid #3A0593;
+}
+
+.three > .sec-text, .six > .sec-text{
+    border: 1px solid #6ED7C6;
+}
+
+#obiettivi{
+    width: 340px;
+    height: 200px;
+    margin: 20px;
+}
+
+.three > .sec-text{
+    clear: both;
+    contain: '';
+    display: table;
+}
+
+#text-m-m{
+    width: 70%;
+}
+
+#img-m-m{
+    width: 28%;
+    height: 100%;
+}
+
+#text-m-m, #img-m-m{
+    float: left;
+}
+
+.punti{
+    text-decoration: underline;
+}
+
+.four{
+    width: calc(60vw + 20px);
+}
+
+.four > .sec-title, .four > .sec-text{
+    width: 100%;
+}
+
+.four > .sec-text{
+    height: 520px;
+    clear: both;
+    content: '';
+    display: table;
+}
+
+#device-text{
+    width: 50%;
+    float: left;
+}
+
+.schemino{
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.schemino > div{
+    margin: 10px 20px;
+    border: 1px solid #000;
+    width: 30%;
+    text-align: center;
+    float: left;
+}
+
+#device-img{
+    width: 25vw;
+    float: right;
+    margin-right: 30px;
+}
+
+#target-market-text{
+    position: relative;
+    height: 295px;
+}
+
+#target-img{
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#titolo-target{
+    text-align: center;
+    font-weight: bold;
+}
+
+.target{
+    padding: 5px;
+}
+
+.target::after{
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.target-title{
+    width: 20%;
+    float: left;
+    font-weight: bold;
+}
+
+.target-caption{
+    width: 70%;
+    float: left;
+}
+
+.target > .one{
+    color: #EB1C74;
+}
+
+.target > .two{
+    color: #6ED7C6;
+}
+
+.target > .three{
+    color: #3A0593;
+}
+
+.spiegazione{
+    font-size: 15px;
+    font-style: italic;
+}
+
+.six > .sec-text{
+    height: 160px;
+    font-size: 18px;
 }
