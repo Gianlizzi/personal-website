@@ -12,28 +12,20 @@
 
 body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    width: 80%;
-    margin: 10px auto;
-    background-image: url(polimi.jpg);
+    margin: 50px;
     background-size: cover;
-}
-
-header, main, footer{
-    margin-bottom: 5px;
-    border-radius: 5px;
 }
 
 header{
     text-align: center;
-    color: white;
-    background-color: rgba(255, 0, 0, 0.8);
-    border: 2px solid black;
     padding: 10px 20px;
+    border-radius: 5px;
 }
   
 header h1 {
     margin-top: 0;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 70px;
 }
   
 header nav {
@@ -57,7 +49,6 @@ header nav a:hover {
 
 main {
     padding: 20px;
-    border: 1px solid black;
     background-color: rgba(255, 255, 255, 0.8);
     font-size: 25px;
 }
@@ -79,43 +70,86 @@ section h2 {
     margin-bottom: 20px;
 }
 
-.about{
-    clear: both;
-    content: '';
-    display: table;
-    margin-bottom: 20px;
+span{
+    font-weight: bold;
+    color: #EF7F00;
 }
 
-.foto{
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #EF7F00;
+    padding: 0 3px;
+}
+
+a:hover{
+    background-color: #EF7F00;
+    color: #fff;
     border-radius: 10px;
 }
 
-.education{
-    height: 500px;
+.container{
+    padding: 10px;
 }
 
-.education > *{
+.container::after{
+    clear: both;
+    content: '';
+    display: block;
+}
+
+.one{
     float: left;
-    margin: 0px 20px 0px 0px;
-    height: 500px;
 }
 
-.caption{
-    width: 30%;
-}
-
-.sport{
-    height: 200px;
-}
-
-.sport > *{
+.two{
     float: right;
-    margin: 0px 10px;
-    height: 200px;
 }
 
-.virtus-descrizione{
-    width: 70%;
+.flip-container, .education, .sport, .fronte, .retro{
+    width: 461px;
+    height: 640px;
+}
+
+.education, .sport{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.flip-container:hover .education, .flip-container:hover .sport{
+    transform: rotateY(180deg);
+}
+
+.fronte, .retro{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.fronte{
+    border: 1px solid #aaa;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.education .fronte{
+    background-image: url(laurea.jpg);
+}
+
+.sport .fronte{
+    background-image: url(virtus.jpg);
+}
+
+.retro{
+    padding: 10px;
+    background-color: #081A3C;
+    color: white;
+    text-align: justify;
+    transform: rotateY(180deg);
 }
   
 #portfolio ul {
@@ -127,10 +161,9 @@ section h2 {
 }
 
 footer{
-    background-color: rgba(0, 0, 255, 0.8);
+    background-color: #EF7F00;
     color: white;
     padding: 10px 20px;
-    border: 2px solid black; 
     text-align: center;
 }
 
